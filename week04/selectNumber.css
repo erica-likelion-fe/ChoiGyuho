@@ -1,0 +1,36 @@
+body {
+  margin: 0px;
+  width: 100%;
+  background-color: rgb(246, 246, 246);
+}
+
+.container {
+  background-color: white;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 30vh;
+  box-shadow: rgb(100, 100, 100, 0.2) 0px 0px 29px 0px;
+  padding: 0px 20px;
+}
+
+.submit-groups {
+  display: flex;
+  gap: 10px;
+}
+
+.submit-groups input {
+  flex: 1;
+  padding: 15px;
+  border: 1px solid rgb(220, 220, 220);
+  border-radius: 5px;
+}
+
+.submit-groups button {
+  cursor: pointer;
+  width: 80px;
+  border: none;
+  background-color: rgb(37, 147, 255);
+  color: white;
+  border-radius: 5px;
+}
