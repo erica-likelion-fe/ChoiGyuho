@@ -1,18 +1,22 @@
-const Nav = () => {
-  const list = [
-    { value: "HTML", id: "list-1" },
-    { value: "CSS", id: "list-2" },
-    { value: "JS", id: "list-3" },
-  ];
+import { Link } from "react-router-dom";
+import "./Nav.css";
+
+function Nav() {
   return (
-    <nav>
-      <ol>
-        {list.map((value) => {
-          return <li key={value.id}>{value.value}</li>;
-        })}
-      </ol>
-    </nav>
+    <div>
+      <div className="Nav">
+        <Link className="navbar_menu" to={"/"}>
+          create
+        </Link>
+        <Link className="navbar_menu" to={"/html"}>
+          HTML
+        </Link>
+        <Link className="navbar_menu" to={"/css"}>
+          CSS
+        </Link>
+      </div>
+    </div>
   );
-};
+}
 
 export default Nav;
