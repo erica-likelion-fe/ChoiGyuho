@@ -13,18 +13,8 @@
 }
 
 .Header .header_center {
-  width: 50%;
   font-size: 25px;
   font-weight: 600;
+  width: 100%;
   justify-content: center;
-}
-
-.Header .header_left {
-  width: 25%;
-  justify-content: flex-start;
-}
-
-.Header .header_right {
-  width: 25%;
-  justify-content: flex-end;
 }
