@@ -1,0 +1,30 @@
+.Header {
+  display: flex;
+  align-items: center;
+
+  padding: 20px 0px;
+  background-color: F8F9FB;
+  border: 1px solid rgb(226, 226, 226);
+  box-shadow: rgba(100, 100, 100, 0.2) 0px 0px 29px 0px;
+}
+
+.Header > div {
+  display: flex;
+}
+
+.Header .header_center {
+  width: 50%;
+  font-size: 25px;
+  font-weight: 600;
+  justify-content: center;
+}
+
+.Header .header_left {
+  width: 25%;
+  justify-content: flex-start;
+}
+
+.Header .header_right {
+  width: 25%;
+  justify-content: flex-end;
+}
