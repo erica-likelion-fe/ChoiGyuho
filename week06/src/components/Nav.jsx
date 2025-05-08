@@ -1,22 +1,35 @@
 import { Link } from "react-router-dom";
 import "./Nav.css";
 
-function Nav() {
+const Nav = ({ posts, setSelectedPost }) => {
+  const handlePostClick = (post) => {
+    setSelectedPost(post);
+  };
+
   return (
     <div>
       <div className="Nav">
-        <Link className="navbar_menu" to={"/"}>
+        <Link to="/" className="navbar_menu">
           create
         </Link>
-        <Link className="navbar_menu" to={"/html"}>
-          HTML
-        </Link>
-        <Link className="navbar_menu" to={"/css"}>
-          CSS
-        </Link>
+
+        {posts.length > 0 && (
+          <div>
+            {posts.map((post, index) => (
+              <Link
+                key={index}
+                to={`/view/${index}`}
+                onClick={() => handlePostClick(post)}
+                className="navbar_menu"
+              >
+                {post.title}
+              </Link>
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );
-}
+};
 
 export default Nav;

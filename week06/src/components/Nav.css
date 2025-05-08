@@ -1,5 +1,6 @@
 .Nav {
   display: flex;
+  justify-content: flex-start;
   align-items: center;
 
   margin-top: 60px;
@@ -11,11 +12,13 @@
 
 .Nav > div {
   display: flex;
+  flex-direction: row;
 }
 
 .Nav .navbar_menu {
   font-size: 20px;
-  width: 100%;
-  justify-content: center;
+  display: inline-block; /* 항목들이 줄지 않게 배치 */
+  margin-right: 20px;
+  color: inherit;
   text-decoration-line: none;
 }

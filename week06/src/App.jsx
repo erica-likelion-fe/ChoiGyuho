@@ -1,23 +1,17 @@
-import "./App.css";
-import { Routes, Route } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Web from "./pages/Web";
-import NotFound from "./pages/NotFound";
 import Create from "./components/Create";
-import Html from "./components/Html";
-import Css from "./components/Css";
+import Display from "./components/Display";
 
 function App() {
   return (
-    <>
-      <Routes>
-        <Route path="/" element={<Web />}>
-          <Route index element={<Create />} />
-          <Route path="html" element={<Html />} />
-          <Route path="css" element={<Css />} />
-        </Route>
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-    </>
+    <Routes>
+      <Route path="/" element={<Web />}>
+        <Route index element={<Create />} />
+        <Route path="view/:postId" element={<Display />} />{" "}
+        {/* 선택된 포스트의 ID를 URL에서 가져옴 */}
+      </Route>
+    </Routes>
   );
 }
 
