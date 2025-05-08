@@ -1,19 +1,16 @@
-import { useState } from "react";
 import "./App.css";
-import Article from "./components/Article";
-import Header from "./components/Header";
-import Nav from "./components/Nav";
+import { Routes, Route } from "react-router-dom";
+import Web from "./pages/Web";
+import NotFound from "./pages/NotFound";
 
 function App() {
-  const [list, setList] = useState(["html", "css", "js"]);
-
   return (
-    <div>
-      <Header text={"내가 원하는 것을 출력합니다."} />
-      <Nav />
-      <nav>{list.map((item) => {})}</nav>
-      <Article />
-    </div>
+    <>
+      <Routes>
+        <Route path="/" element={<Web />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </>
   );
 }
 

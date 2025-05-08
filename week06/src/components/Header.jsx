@@ -1,9 +1,5 @@
-import { useState } from "react";
-
-const Header = ({ text }) => {
-  const [num, setNum] = useState(0);
-  const [test, setTest] = useState("");
-  return <header>{text}</header>;
+const Header = () => {
+  return <header>a</header>;
 };
 
 export default Header;

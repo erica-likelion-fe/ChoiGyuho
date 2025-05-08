@@ -1,4 +1,4 @@
-const Article = () => {
+const Create = () => {
   return (
     <>
       <h3>Welcome</h3>
@@ -7,4 +7,4 @@ const Article = () => {
   );
 };
 
-export default Article;
+export default Create;
