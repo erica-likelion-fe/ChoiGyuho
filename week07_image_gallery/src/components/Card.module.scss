@@ -1,0 +1,30 @@
+.Card {
+  display: flex;
+  flex-direction: column;
+  width: 294px;
+  cursor: pointer;
+
+  overflow: hidden;
+}
+
+.card_img {
+  width: 294px;
+  height: 392px;
+  object-fit: cover;
+}
+
+.title {
+  margin-top: 20px;
+
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.desc {
+  margin-top: 4px;
+
+  font-family: "Abhaya Libre", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+}

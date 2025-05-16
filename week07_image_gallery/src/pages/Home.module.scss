@@ -1,0 +1,26 @@
+.Home {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 176px;
+  width: 1248px;
+}
+
+.button_section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.card_desc {
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.card_section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
