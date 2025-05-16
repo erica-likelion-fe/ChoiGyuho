@@ -1,0 +1,30 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin: 193px 0 221px 0;
+}
+
+.pageButton {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  font-family: "Abhaya Libre", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  margin: 42px 0px;
+}
+
+.active {
+  font-size: 36px;
+  font-weight: 700;
+  text-decoration-line: underline;
+}
+
+.arrow {
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+}
