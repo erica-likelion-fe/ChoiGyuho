@@ -1,4 +1,4 @@
-import "./TextField.css";
+import _styles from "./TextField.module.scss";
 
 const TextField = () => {
   return <div>textfield</div>;

@@ -1,4 +1,4 @@
-import "./Posted.css";
+import _styles from "./Posted.module.scss";
 
 const Posted = () => {
   return <div>posted</div>;
