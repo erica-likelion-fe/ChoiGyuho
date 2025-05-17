@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 import Button from "../components/Button";
 import Card from "../components/Card";
@@ -10,6 +11,7 @@ import styles from "./Home.module.scss";
 
 const Home = () => {
   const [cardInfoList, setCardInfoList] = useState([]);
+  const nav = useNavigate();
   const {
     currentPage,
     currentData,
@@ -28,7 +30,7 @@ const Home = () => {
   return (
     <div className={styles.Home}>
       <div className={styles.button_section}>
-        <Button text={"Create Post"} />
+        <Button onClick={() => nav("/posting")} text={"Create Post"} />
       </div>
       <div className={styles.card_desc}>Image</div>
       <div className={styles.card_section}>
