@@ -1,0 +1,60 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 24px 20px;
+  width: 300px;
+  position: relative;
+  text-align: center;
+}
+
+.closeButton {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.message {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 24px;
+  line-height: 1.5;
+  white-space: pre-line;
+}
+
+.viewButton {
+  width: 100%;
+  padding: 14px;
+  background-color: black;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.cancelButton {
+  background: none;
+  border: none;
+  color: black;
+  font-size: 14px;
+  cursor: pointer;
+}

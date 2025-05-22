@@ -30,7 +30,11 @@ const Home = () => {
   return (
     <div className={styles.Home}>
       <div className={styles.button_section}>
-        <Button onClick={() => nav("/posting")} text={"Create Post"} />
+        <Button
+          onClick={() => nav("/posting")}
+          text={"Create Post"}
+          isActive={true}
+        />
       </div>
       <div className={styles.card_desc}>Image</div>
       <div className={styles.card_section}>
