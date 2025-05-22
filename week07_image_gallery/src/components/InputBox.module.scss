@@ -1,0 +1,39 @@
+.section {
+  width: 100%;
+  max-width: 1000px;
+  margin-bottom: 120px;
+}
+
+.label {
+  display: block;
+
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 14px;
+}
+
+.textInput {
+  width: 100%;
+  height: 91px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  padding-left: 32px;
+
+  font-weight: 500;
+  font-size: 36px;
+  font-family: inherit;
+  resize: none;
+
+  &::placeholder {
+    color: #b2b2b2;
+  }
+}
+
+.hint {
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  color: #363636;
+  margin-top: 12px;
+}

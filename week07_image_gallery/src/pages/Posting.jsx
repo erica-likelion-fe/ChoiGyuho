@@ -1,7 +1,12 @@
-import _styles from "./Posting.module.scss";
+import Editor from "../components/Editor";
+import styles from "./Posting.module.scss";
 
 const Posting = () => {
-  return <div>posting</div>;
+  return (
+    <div className={styles.Editor}>
+      <Editor />
+    </div>
+  );
 };
 
 export default Posting;
