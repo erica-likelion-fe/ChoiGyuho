@@ -13,48 +13,59 @@
 
 .modal {
   background-color: #fff;
-  border-radius: 16px;
-  padding: 24px 20px;
-  width: 300px;
+  border-radius: 40px;
+  width: 886px;
+  height: 560px;
+  padding: 102px 91px; // 넉넉한 내부 여백
   position: relative;
   text-align: center;
+  box-sizing: border-box;
 }
 
 .closeButton {
   position: absolute;
-  top: 12px;
+  top: 9px;
   right: 12px;
   background: none;
   border: none;
-  font-size: 20px;
+  font-size: 72px;
   cursor: pointer;
 }
 
 .message {
-  font-size: 16px;
-  font-weight: bold;
-  margin-bottom: 24px;
-  line-height: 1.5;
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+
+  margin-top: 41px;
+  margin-bottom: 88px;
   white-space: pre-line;
 }
 
 .viewButton {
   width: 100%;
-  padding: 14px;
+  padding: 20px;
   background-color: black;
+
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
   color: white;
-  font-size: 14px;
-  font-weight: bold;
+
   border: none;
   border-radius: 50px;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
   cursor: pointer;
 }
 
 .cancelButton {
   background: none;
-  border: none;
+
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
   color: black;
-  font-size: 14px;
+
+  border: none;
   cursor: pointer;
 }

@@ -1,0 +1,45 @@
+.Posted {
+  max-width: 1248px;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+.contentWrapper {
+  display: flex;
+  gap: 40px;
+  align-items: stretch;
+  margin-bottom: 24px;
+}
+
+.image {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+}
+
+.title {
+  width: 50%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: right;
+
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 100px;
+  font-weight: 700;
+}
+
+.desc {
+  margin-top: 60px;
+  margin-bottom: 240px;
+
+  font-family: "Abhaya Libre", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.buttonWrapper {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 600px;
+}

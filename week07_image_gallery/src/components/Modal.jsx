@@ -9,7 +9,7 @@ const Modal = ({ isOpen, onClose, onViewPost, message, viewButtonText }) => {
         <button className={styles.closeButton} onClick={onClose}>
           ×
         </button>
-        <p className={styles.message}>{message}</p>
+        <div className={styles.message}>{message}</div>
         <button className={styles.viewButton} onClick={onViewPost}>
           {viewButtonText}
         </button>

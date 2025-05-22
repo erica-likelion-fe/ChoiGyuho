@@ -3,7 +3,7 @@ import styles from "./Editor.module.scss";
 import Button from "./Button";
 import InputBox from "./InputBox";
 
-const Editor = ({ initData, onSubmit }) => {
+const Editor = ({ initData, onSubmit, buttonText }) => {
   const [input, setInput] = useState({
     imageFile: null,
     title: "",
@@ -15,6 +15,7 @@ const Editor = ({ initData, onSubmit }) => {
     if (initData) {
       setInput({
         imageFile: initData.imageFile || null,
+        previewUrl: initData.previewUrl || initData.img || null,
         title: initData.title || "",
         description: initData.description || "",
       });
@@ -35,12 +36,20 @@ const Editor = ({ initData, onSubmit }) => {
   };
 
   const onSubmitClick = () => {
-    onSubmit(input);
+    const img = input.imageFile
+      ? URL.createObjectURL(input.imageFile)
+      : initData?.img || null;
+
+    onSubmit({ ...input, img });
   };
 
   const { imageFile, title, description } = input;
   const isComplete = imageFile && title && description;
 
+  console.log("📌 imageFile:", input.imageFile);
+  console.log("📌 previewUrl:", input.previewUrl);
+  console.log("📌 이미지 렌더링 조건:", !!input.imageFile, !!input.previewUrl);
+  console.log("📌 전체 input 상태:", input);
   return (
     <div className={styles.Editor}>
       <section className={styles.section}>
@@ -49,6 +58,12 @@ const Editor = ({ initData, onSubmit }) => {
           {input.imageFile ? (
             <img
               src={URL.createObjectURL(input.imageFile)}
+              alt="preview"
+              className={styles.preview}
+            />
+          ) : input.previewUrl ? (
+            <img
+              src={input.previewUrl}
               alt="preview"
               className={styles.preview}
             />
@@ -93,7 +108,7 @@ const Editor = ({ initData, onSubmit }) => {
         className={styles.submitButton}
         onClick={onSubmitClick}
         isActive={isComplete}
-        text={"Submit Post"}
+        text={buttonText}
       />
     </div>
   );
