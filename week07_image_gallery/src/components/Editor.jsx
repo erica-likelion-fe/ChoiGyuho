@@ -46,10 +46,6 @@ const Editor = ({ initData, onSubmit, buttonText }) => {
   const { imageFile, title, description } = input;
   const isComplete = imageFile && title && description;
 
-  console.log("📌 imageFile:", input.imageFile);
-  console.log("📌 previewUrl:", input.previewUrl);
-  console.log("📌 이미지 렌더링 조건:", !!input.imageFile, !!input.previewUrl);
-  console.log("📌 전체 input 상태:", input);
   return (
     <div className={styles.Editor}>
       <section className={styles.section}>
